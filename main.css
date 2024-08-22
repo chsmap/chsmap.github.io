@@ -1,0 +1,107 @@
+.nameable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+html {
+  overflow: hidden;
+  background-color: lightgrey;
+  touch-action: none;
+  height: 100%;
+  height: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: fixed;
+}
+
+#map-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#map {
+  width: 900px;
+  height: 1000px;
+  position: absolute;
+  will-change: inherit;
+}
+
+map-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+map-door {
+  z-index: 4;
+}
+
+map-street {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+#directions {
+  z-index: 5;
+}
+
+.highlight {
+  z-index: 5;
+  outline: 3px solid darkblue;
+  position: absolute;
+}
+
+direction-line {
+  z-index: 5;
+}
+
+.raised {
+  z-index: 3;
+}
+
+#floating {
+  z-index: 6;
+  position: absolute;
+  padding: 5px;
+  background-color: #c6c6c6;
+  border: #bababa 1px solid;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+#search {
+  z-index: 6;
+  background-color: #c6c6c6;
+  border: #bababa 1px solid;
+}
+
+.link {
+  color: #0000ee;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#collapse {
+  visibility: visible;
+}
+
+pinch-zoom {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
